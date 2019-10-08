@@ -1,0 +1,25 @@
+{
+    "tmp-LF1": {
+        "lambda": {
+            "messageVersion": "1.0",
+            "invocationSource": "DialogCodeHook",
+            "userId": "John",
+            "sessionAttributes": {},
+            "bot": {
+                "name": "diningSuggestionIntent",
+                "alias": "$LATEST",
+                "version": "$LATEST"
+            },
+            "outputDialogMode": "Text",
+            "currentIntent": {
+                "name": "diningSuggestionIntent",
+                "slots": {
+                    "cuisineType": "Mexican",
+                    "PickupDate": "2030-11-08",
+                    "PickupTime": "10:00"
+                },
+                "confirmationStatus": "None"
+            }
+        }
+    }
+}

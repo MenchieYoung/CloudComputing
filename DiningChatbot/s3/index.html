@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dining Chatbot</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/apiGateway-js-sdk/lib/axios/dist/axios.standalone.js"></script>
+    <script type="text/javascript" src="js/apiGateway-js-sdk/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+    <script type="text/javascript" src="js/apiGateway-js-sdk/lib/CryptoJS/rollups/sha256.js"></script>
+    <script type="text/javascript" src="js/apiGateway-js-sdk/lib/CryptoJS/components/hmac.js"></script>
+    <script type="text/javascript" src="js/apiGateway-js-sdk/lib/CryptoJS/components/enc-base64.js"></script>
+    <script type="text/javascript" src="js/apiGateway-js-sdk/lib/url-template/url-template.js"></script>
+    <script type="text/javascript" src="js/apiGateway-js-sdk/lib/apiGatewayCore/sigV4Client.js"></script>
+    <script type="text/javascript" src="js/apiGateway-js-sdk/lib/apiGatewayCore/apiGatewayClient.js"></script>
+    <script type="text/javascript" src="js/apiGateway-js-sdk/lib/apiGatewayCore/simpleHttpClient.js"></script>
+    <script type="text/javascript" src="js/apiGateway-js-sdk/lib/apiGatewayCore/utils.js"></script>
+    <script type="text/javascript" src="js/apiGateway-js-sdk/apigClient.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
+    <script type="text/javascript" src="js/chatbot-script.js"></script>
+  </head>
+  <body>
+    <div class="cont">
+      <h2 align="left">Dining Concierge Chatbot</h2>
+      <h6 align="left">10/07/2019</h6>
+      <div id="chat-output"></div>
+      
+      <form>
+        <div class="input-group mb-3">
+          <input type="text" id="user-input-text" class="form-control" placeholder="Message" aria-label="messgae" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button submit" id="user-input-button" onclick="return callChatbotLambda()">Send</button>
+          </div>
+        </div>
+      </form>
+      <hr>
+      <div class="footer">
+        By <strong>Shiyun</strong>(sy2797), <strong>Di</strong>(dw2834), <strong>Manqi</strong>(my2577) and <strong>Tong</strong>(ty2387)
+      </div>
+    </div>
+  </body>
+</html>
